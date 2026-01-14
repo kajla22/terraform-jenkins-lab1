@@ -7,9 +7,9 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "6517-rg-jenkins"
-    storage_account_name = "6517tfstatestorage123"
-    container_name       = "kajla-terraform-state"
+    resource_group_name  = "Abhinav-10846517-rg"
+    storage_account_name = "6517tfstorage"
+    container_name       = "tfstorage"
     key                  = "jenkins-kajla.tfstate"
   }
 }
@@ -23,7 +23,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "6517-rg-jenkins"
+  name     = "Abhinav-10846517-rg"
   location = "East US"
 }
 
